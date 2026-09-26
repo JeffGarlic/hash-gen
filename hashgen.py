@@ -20,12 +20,12 @@ def generate_hash_file(level, count=10, filename="hashes.txt"):
             h = hashlib.md5(pw.encode()).hexdigest()
             f.write(h + "\n")
             passwords.append((pw, h))
-    
+     
     print(f"\nGenerated {count} {level} passwords:")
     print(f"{'Password':<20} {'MD5 Hash'}")
     print("-" * 55)
     for pw, h in passwords:
-        print(f"{pw:<20} {h}")
+        print(f"{pw:<20} {h}") 
     print(f"\nHashes saved to {filename}")
 
 generate_hash_file("easy")
