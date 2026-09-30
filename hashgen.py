@@ -1,7 +1,7 @@
 import hashlib
 import random
 import string
-
+ 
 LEVELS = {
     "easy":   (6,  string.digits),
     "medium": (8,  string.ascii_lowercase + string.digits),
