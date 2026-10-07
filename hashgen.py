@@ -1,8 +1,8 @@
 import hashlib
 import random
-import string
+import string 
  
-LEVELS = {
+LEVELS = { 
     "easy":   (6,  string.digits),
     "medium": (8,  string.ascii_lowercase + string.digits),
     "hard":   (12, string.ascii_letters + string.digits + "!@#$%^&*"),
