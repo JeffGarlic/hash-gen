@@ -7,7 +7,7 @@ LEVELS = {
     "medium": (8,  string.ascii_lowercase + string.digits), 
     "hard":   (12, string.ascii_letters + string.digits + "!@#$%^&*"),    
 } 
-
+ 
 def random_password(length, charset):
     return ''.join(random.choices(charset, k=length))
 
