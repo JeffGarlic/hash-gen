@@ -8,7 +8,7 @@ LEVELS = {
     "hard":   (12, string.ascii_letters + string.digits + "!@#$%^&*"),   
 } 
  
-def random_password(length, charset):
+def random_password(length, charset): 
     return ''.join(random.choices(charset, k=length))
 
 def generate_hash_file(level, count=10, filename="hashes.txt"):
